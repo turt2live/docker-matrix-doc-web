@@ -11,8 +11,8 @@ git fetch origin ${SPEC_FETCH}
 git checkout ${SPEC_BRANCH}
 
 # Install dependencies and build the spec
-pip install -r scripts/requirements.txt
-python ./scripts/gendoc.py
+pip3 install -r scripts/requirements.txt
+python3 ./scripts/gendoc.py
 
 # Copy the spec to nginx (clearing any files in there already)
 rm -rf ${target_dir}/*
